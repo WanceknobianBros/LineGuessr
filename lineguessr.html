@@ -1,0 +1,48 @@
+<html>
+  <div>
+    <nav>
+      <div class="nav">
+	  <p><a href="" class="a"><b>LineGuessr</b></a></p>
+		<p><a href="" class="a">Competitive</a></p>
+        <p><a href="" class="a">GridGuessr</a></p>
+        <p><a href="" class="a">About</a></p>
+      </div>
+    </nav>
+    <hr />
+    <br /><br />
+    <h1 id="title">LineGuessr</h1>
+    <div id=game>
+      <div id="goalholder">
+        <h3 id="goal">Goal: undefined%</h3>
+      </div>
+      <div id="rangeholder">
+        <input type="range" min="0" max="100" value="0" id="slider" class="slider">
+      </div>
+      <input type="button" value="Confirm" onclick="onConfirm()">
+      <input type="button" value="New" id="new" onclick="onNew()">
+      <div id="resultholder">
+        <h3 id="result"></h3>
+      </div>
+    </div>
+<br/><br/>
+    <div id="ranks">
+      <h3 id="f" class="rank">F</h3>
+      <h3 id="e" class="rank">E</h3>
+      <h3 id="d" class="rank">D</h3>
+      <h3 id="c" class="rank">C</h3>
+      <h3 id="b" class="rank">B</h3>
+      <h3 id="a" class="rank">A</h3>
+      <h3 id="s" class="rank">S</h3>
+      <h3 id="plus" class="rank">S+</h3>
+    </div>
+    <div id="resultbar" class="resultbar">
+    </div>
+    <div id="thumb" class="resultbar">
+      3
+    </div>
+
+    <input type="number" id="thumbvalue" value=5 class="resultbar">
+    <input type="button" id="enter" value="Enter" onclick="onEnter()">
+  </div>
+
+</html>
